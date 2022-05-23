@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+<mapper namespace="PostSQL.DB.mapper.TestMapper">
+<!--  
+-->
+	<insert id="regist" parameterType="PostSQL.DB.command.TestVO">
+		insert into books (title, author, image)
+		values (#{title}, #{author}, #{image});
+	</insert>
+	
+</mapper>

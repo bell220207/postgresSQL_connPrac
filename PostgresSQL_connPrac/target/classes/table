@@ -1,0 +1,11 @@
+create table books (
+    id serial primary key,
+    title varchar(50),
+    author varchar(50),
+    image varchar(255)
+);
+
+insert into books (title, author, image)
+values ('자바의 정석', '남궁성', 'https://image.aladin.co.kr/product/22460/28/cover150/8994492046_1.jpg');
+
+select * from books;
